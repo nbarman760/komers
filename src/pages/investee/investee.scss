@@ -1,0 +1,39 @@
+page-investee {
+
+}
+
+.investee-list ion-item{
+   display: inline-flex;
+}
+.investee-list ion-item .logo{
+  float: left;
+  width: 20%;
+}
+.investee-list ion-item .logo ion-img{
+  width: 35px;
+  height: 33px;
+  background: none;
+}
+
+.investee-list ion-item .description{
+  float: left;
+  font-size: 83%;
+  padding: 2%;
+  width: 50%;
+  font-family: unset;
+  color: gray;
+}
+
+.investee-list ion-item a{
+  height: 34px !important;
+  width: 100px;
+  border-radius: 0px;
+  float: right;
+}
+
+.investee-list ion-item:active{
+  background: #ddd;
+}
+.toolbar-background, .toolbar-background-md{
+   background-color: #000;
+}

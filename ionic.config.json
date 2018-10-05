@@ -1,0 +1,7 @@
+{
+  "name": "komer",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
