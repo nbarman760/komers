@@ -7,7 +7,7 @@ page-investee {
 }
 .investee-list ion-item .logo{
   float: left;
-  width: 20%;
+  width: 10%;
 }
 .investee-list ion-item .logo ion-img{
   width: 35px;
@@ -19,6 +19,15 @@ page-investee {
   float: left;
   font-size: 83%;
   padding: 2%;
+  white-space: pre-line;
+  width: 68%;
+  font-family: unset;
+  color: gray;
+}
+.investee-list ion-item ion-label{
+  float: left;
+  font-size: 83%;
+  padding: 2%;
   width: 50%;
   font-family: unset;
   color: gray;
@@ -26,10 +35,14 @@ page-investee {
 
 .investee-list ion-item a{
   height: 34px !important;
-  width: 100px;
+  width: 20%;
   border-radius: 0px;
   float: right;
 }
+.investee-list ion-item a span{
+  font-size: 79%;
+}
+
 
 .investee-list ion-item:active{
   background: #ddd;
