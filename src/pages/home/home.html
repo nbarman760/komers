@@ -23,15 +23,15 @@
       </ul>
     </div>
 <div class="allpanel">
-  <ul class="items">
-    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/onlineshope.jpg"></ion-img><span>Online Shopping</span></li>
-    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/resturent.png"></ion-img><span>Restrurant</span></li>
+  <ul class="items" *ngIf="Categories">
+    <li *ngFor="let category of Categories"><ion-img (click)="gotoInvestee(category.id)" src="{{ category.thumbnail }}"></ion-img><span>{{ category.name }}</span></li>
+   <!-- <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/resturent.png"></ion-img><span>Restrurant</span></li>
     <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/onlinemovies.png"></ion-img><span>Movies</span></li>
     <li><ion-img  (click)="gotoInvestee()" src="/assets/imgs/hotel.png"></ion-img><span>Hotels</span></li>
     <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/travel.png"></ion-img><span>Travels</span></li>
     <li><ion-img  (click)="gotoInvestee()" src="/assets/imgs/taxi.png"></ion-img><span>Taxi</span></li>
     <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/doctor.png"></ion-img><span>Doctors</span></li>
-    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/recharje.png"></ion-img><span>Recharges</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/recharje.png"></ion-img><span>Recharges</span></li> -->
   </ul>
 </div>
 </ion-content>

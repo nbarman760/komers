@@ -7,10 +7,11 @@ import { AuthService } from "../home/apiservice";
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  Categories : any;
   constructor(public navCtrl: NavController, private authservice: AuthService) {
     this.authservice.categories().then(data=> {
           console.log(data);
+          this.Categories = data;
     });
   }
 
