@@ -3,5 +3,11 @@
   "integrations": {
     "cordova": {}
   },
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://komers.in/api"
+    }
+  ],
   "type": "ionic-angular"
 }

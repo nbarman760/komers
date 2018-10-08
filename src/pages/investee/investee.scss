@@ -3,7 +3,7 @@ page-investee {
 }
 
 .investee-list ion-item{
-   display: inline-flex;
+  display: inline-flex;
 }
 .investee-list ion-item .logo{
   float: left;
@@ -48,5 +48,10 @@ page-investee {
   background: #ddd;
 }
 .toolbar-background, .toolbar-background-md{
-   background-color: #000;
+  background-color: #000;
+}
+
+
+.back-button-icon, .icon, .icon-md, .back-button-icon-md, .ion-md-arrow-back{
+   color: #ffffff;
 }

@@ -1,3 +1,23 @@
 page-contact {
 
 }
+.contactform ion-label{
+   color: #000;
+  text-align: left;
+  font-size: unset !important;
+}
+
+.form-control{
+  height: 40px !important;
+  padding: 0px !important;
+  border-radius: 0px !important;
+}
+
+.btn-submit{
+  width: 100%;
+  background: #000;
+  border-radius: 0px;
+}
+ion-textarea{
+   height: 150px !important;
+}

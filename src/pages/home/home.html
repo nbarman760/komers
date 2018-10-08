@@ -1,18 +1,37 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+       <ion-input type="text" class="search-input" placeholder="Search"></ion-input>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <a href="javascript:void(0)" (click)="pushpage()">Investee</a>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+    <ion-slides autoplay="5000" loop="true" speed="500">
+      <ion-slide class="home-banner">
+        <ion-img src="/assets/imgs/homebg.png" class="my-banner-img"></ion-img>
+      </ion-slide>
+      <ion-slide class="home-banner">
+        <ion-img src="/assets/imgs/homebg.png" class="my-banner-img"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="mypanel">
+      <ul class="items">
+        <li><ion-img src="/assets/imgs/investee.png"></ion-img><a href="">Investee</a></li>
+        <li><ion-img src="/assets/imgs/investor.png"></ion-img><a href="">Investor</a></li>
+        <li><ion-img src="/assets/imgs/freelisting.png"></ion-img><a href="">Free Listing</a></li>
+        <li><ion-img src="/assets/imgs/advertise.png"></ion-img><a href="">Advertise</a></li>
+      </ul>
+    </div>
+<div class="allpanel">
+  <ul class="items">
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/onlineshope.jpg"></ion-img><span>Online Shopping</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/resturent.png"></ion-img><span>Restrurant</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/onlinemovies.png"></ion-img><span>Movies</span></li>
+    <li><ion-img  (click)="gotoInvestee()" src="/assets/imgs/hotel.png"></ion-img><span>Hotels</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/travel.png"></ion-img><span>Travels</span></li>
+    <li><ion-img  (click)="gotoInvestee()" src="/assets/imgs/taxi.png"></ion-img><span>Taxi</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/doctor.png"></ion-img><span>Doctors</span></li>
+    <li><ion-img (click)="gotoInvestee()" src="/assets/imgs/recharje.png"></ion-img><span>Recharges</span></li>
+  </ul>
+</div>
 </ion-content>

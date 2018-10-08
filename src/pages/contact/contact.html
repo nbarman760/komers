@@ -1,17 +1,31 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Contact Us
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+  <form [formGroup]="todo" class="contactform" (ngSubmit)="logForm()">
+    <div class="form-group">
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text" class="form-control" formControlName="name" placeholder="Enter your Name"></ion-input>
+    </div>
+    <div class="form-group">
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" class="form-control" formControlName="email" placeholder="user@email.com"></ion-input>
+    </div>
+    <div class="form-group">
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" class="form-control" formControlName="phone" placeholder="user@email.com"></ion-input>
+    </div>
+    <div class="form-group">
+      <ion-label stacked>Message</ion-label>
+      <ion-textarea class="form-control" formControlName="message" placeholder="Write your messge"></ion-textarea>
+    </div>
+    <div class="form-group">
+      <button ion-button class="btn-submit" type="submit" [disabled]="!todo.valid">Send Message</button>
+    </div>
+  </form>
 </ion-content>

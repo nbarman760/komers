@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SingleinvesteePage } from "../singleinvestee/singleinvestee";
 
 /**
  * Generated class for the InvesteePage page.
@@ -20,6 +21,9 @@ export class InvesteePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InvesteePage');
+  }
+  gotoInvesteeDetail(){
+    this.navCtrl.push(SingleinvesteePage);
   }
 
 }
