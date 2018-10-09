@@ -12,11 +12,14 @@ import { RegisterPageModule } from '../pages/register/register.module';
 import { InvesteePageModule } from "../pages/investee/investee.module";
 import { SingleinvesteePageModule  } from "../pages/singleinvestee/singleinvestee.module";
 import { SettingPageModule } from "../pages/setting/setting.module";
-
+import { InvesteeapplyPageModule } from "../pages/investeeapply/investeeapply.module";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthService} from '../pages/home/apiservice';
 import { IonicStorageModule } from '@ionic/storage';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { Base64 } from '@ionic-native/base64';
+import { FileChooser } from '@ionic-native/file-chooser';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,7 @@ import { IonicStorageModule } from '@ionic/storage';
     SingleinvesteePageModule,
     SettingPageModule,
     HttpModule,
+    InvesteeapplyPageModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot()
   ],
@@ -49,7 +53,10 @@ import { IonicStorageModule } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     AuthService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ImagePicker,
+    Base64,
+    FileChooser
   ]
 })
 export class AppModule {}
